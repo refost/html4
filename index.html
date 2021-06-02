@@ -18,19 +18,19 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <link rel="stylesheet" href="css/myStyle.css">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <header>
-    <div class="wrapper">
+  <header class="header">
+    <div class="wrapper line">
       <div class="logo">
-        <img src="img/logo_Oxit.png" width="" height="">
+        <img src="img/logo_Oxit.png" width="80px" height="80px" alt="logo">
       </div>
       <nav>
-        <ul>
+        <ul class="menu">
           <li>
             <a href="#">Головна</a>
           </li>
@@ -55,7 +55,7 @@
   </header>
 
   <section class="registration">
-    <div class="wrapper">
+    <div class="wrapper line">
       <div class="about">
         <h1>Курси програмування у Луцьку</h1>
         <p>Сфера ІТ розвивається максимально швидко. Зараз дуже поппулярно здобувати освіту, що пов'язана
@@ -65,49 +65,47 @@
           стати ІТ спеціалістом. Чекаємо вас на наших курсах з програмуванням в Луьку. Сатрт наступного
           курсу 3 серпня</p>
       </div>
-      <form action="">
+      <form action="" class="reg">
         <h3>
           Зареєструватися на курси
         </h3>
         <label for="firstName">Ім'я</label>
-        <img src="img/icons/required.png" width="" height="">
+        <img src="img/icons/required.png" width="7px" height="7px" alt="star">
         <input type="text" id="firstName" name="name" maxlength="50" required placeholder="Ім'я">
 
         <label for="surname">Прізвище</label>
-        <img src="img/icons/required.png" width="" height="">
+        <img src="img/icons/required.png" idth="7px" height="7px" alt="star">
         <input type="text" id="surname" name="surname" maxlength="50" required placeholder="Прізвище">
 
         <label for="special">Мене більше ціавить</label>
-        <img src="img/icons/required.png" width="" height="">
+        <img src="img/icons/required.png" idth="7px" height="7px" alt="star">
         <input type="text" id="special" name="special" maxlength="50" required placeholder="developer or QA">
 
         <label for="phone">Номер телефону</label>
-        <img src="img/icons/required.png" width="" height="">
+        <img src="img/icons/required.png" idth="7px" height="7px" alt="star">
         <input type="tel" id="phone" name="phone" maxlength="13" required
                placeholder="номер телефону: +38 ххх хх хх ххх">
 
         <label for="mail">Ім'я</label>
-        <img src="img/icons/required.png" width="" height="">
+        <img src="img/icons/required.png" idth="7px" height="7px" alt="star">
         <input type="text" id="mail" name="mail" maxlength="50" required placeholder="Email">
 
         <div class="confirm">
-          <p>Я погоджуюся із <a href="#">Політикою Конфіденційності</a></p>
-          <img src="img/icons/required.png" width="" height="">
           <input type="checkbox" id="confirm" name="confirm" required>
+          <p>Я погоджуюся із <a href="#">Політикою Конфіденційності</a></p>
+          <img src="img/icons/required.png" idth="7px" height="7px" alt="star">
         </div>
-
-        <input type="submit" value="зареєструватися зараз">
-
+        <input type="submit"  class="btn" value="зареєструватися зараз">
       </form>
     </div>
   </section>
 
   <section class="develop">
     <div class="wrapper">
-      <h2>Курс "Розробка сайтів"</h2>
-      <div class="column">
+      <h2>Курс «Розробка сайтів»</h2>
+      <div class="line">
         <div class="course">
-          <img src="img/icons/course-icon-1.png" width="" height="" alt="WordPress">
+          <img src="img/icons/course-icon-1.png" width="85" height="85" alt="WordPress">
           <h3 class="course-title">Розробка сайтів на WordPress</h3>
           <p class="description">
             Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress,
@@ -116,7 +114,7 @@
           </p>
         </div>
         <div class="course">
-          <img src="img/icons/course-icon-2.png" width="" height="" alt="Drupal">
+          <img src="img/icons/course-icon-2.png" width="85" height="85" alt="Drupal">
           <h3 class="course-title">Розробка сайтів на Drupal8</h3>
           <p class="description">
             Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою ти пізнаєш секрети
@@ -124,7 +122,7 @@
           </p>
         </div>
         <div class="course">
-          <img src="img/icons/course-icon-3.png" width="" height="" alt="QA">
+          <img src="img/icons/course-icon-3.png" width="85" height="85" alt="QA">
           <h3 class="course-title">Ознайомлення з тестуванням</h3>
           <p class="description">
             Ти дізнаєшся про забезпечення якості в котексті різних моделей розробки ПЗ.
@@ -137,8 +135,8 @@
   </section>
 
   <section class="feedback">
-    <div class="wrapper">
-      <div class="achievements">
+    <div class="achievements">
+      <div class="wrapper line">
         <div class="achieve-item">
           <img src="img/icons/statistic-icon-1.png" width="85" height="85" alt="static icon">
           <p class="achieve-desc">
@@ -170,36 +168,151 @@
       </div>
     </div>
     <div class="response">
-      <h2 class="response-title">
-        Що кажуть студенти наших курсів:
-      </h2>
-      <div class="slider">
-        <div class="slide-item">
-          <img src="img/icons/NAME.png">
-          <p class="response-text">
-            Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні
-            сайти та знайшов справу, якою хочу займатись. Після успішного завершення курсів мені
-            надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу
-            сказати, що Drupal та ОхІТ повністю змнили моє життя.
-          </p>
-          <p class="author">
-            Коля
-            <span class="position">Drupal-девелопер</span>
-          </p>
-          <img src="img/icons/NAME.png">
+      <div class="wrapper">
+        <h2 class="response-title">
+          Що кажуть студенти наших курсів:
+        </h2>
+        <div class="slider">
+          <div class="slide-item">
+            <div class="slide">
+              <div class="main-sl-cont">
+                <img src="img/icons/sl.png" class="left" width="30px" height="27px" alt="img">
+                <p class="response-text">
+                  Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні
+                  сайти та знайшов справу, якою хочу займатись. Після успішного завершення курсів мені
+                  надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу
+                  сказати, що Drupal та ОхІТ повністю змнили моє життя.
+                </p>
+                <img src="img/icons/sl-r.png" class="right" width="30px" height="27px" alt="img">
+              </div>
+              <p class="author">
+                <span class="name">Коля</span>
+                <i>Drupal-девелопер</i>
+              </p>
+            </div>
+          </div>
         </div>
-        </div>
-
+      </div>
     </div>
-
-
   </section>
 
   <section class="video">
     <div class="wrapper">
-      <h2>Відео</h2>
-
+      <div>
+        <h2>Відео</h2>
+        <p class="video-description">
+          Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
+          Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий
+          друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба"
+          не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні,
+          залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя
+          завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге
+          - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker,
+          які використовували різні версії Lorem Ipsum.
+        </p>
+      </div>
+      <iframe width="1020" height="524" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+              clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+  </section>
+
+  <section class="mentors">
+    <h2>Наші ментори</h2>
+    <div class="mentors-slider">
+      <div class="mentor">
+        <img src="img/viktor.png" width="" height="" alt="Victor">
+        <div class="mentor-description">
+          <p>
+            Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься
+            досвідом управлінець із величезним досвідом! Сам засновник і СЕО компанії
+            InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах
+            проект-менеджменту
+          </p>
+          <p>
+            Віктору є про що розповісти. Він знає все про створення та керування великими
+            компаніями, ефективну комункацію, успішні проекти і багато іншого. Прицьому він
+            ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодної хвилини.
+          </p>
+          <p>
+            На книжкових полицях Віктора -сотні прочитаних книг про управління і не тільки.
+            А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення.
+            Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.
+          </p>
+          <p>
+            Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід і
+            ви таке пропустите? Записуйтесь уже зараз!
+          </p>
+        </div>
+      </div>
+      <div class="mentor">
+        <img src="img/vova.png.png" width="" height="" alt="Vova">
+        <div class="mentor-description">
+          <p>
+            Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься
+            досвідом управлінець із величезним досвідом! Сам засновник і СЕО компанії
+            InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах
+            проект-менеджменту
+          </p>
+          <p>
+            Віктору є про що розповісти. Він знає все про створення та керування великими
+            компаніями, ефективну комункацію, успішні проекти і багато іншого. Прицьому він
+            ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодної хвилини.
+          </p>
+          <p>
+            На книжкових полицях Віктора -сотні прочитаних книг про управління і не тільки.
+            А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення.
+            Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.
+          </p>
+          <p>
+            Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід і
+            ви таке пропустите? Записуйтесь уже зараз!
+          </p>
+        </div>
+      </div>
+      <div class="mentor">
+        <img src="img/mark.png" width="" height="" alt="Mark">
+        <div class="mentor-description">
+          <p>
+            Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься
+            досвідом управлінець із величезним досвідом! Сам засновник і СЕО компанії
+            InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах
+            проект-менеджменту
+          </p>
+          <p>
+            Віктору є про що розповісти. Він знає все про створення та керування великими
+            компаніями, ефективну комункацію, успішні проекти і багато іншого. Прицьому він
+            ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодної хвилини.
+          </p>
+          <p>
+            На книжкових полицях Віктора -сотні прочитаних книг про управління і не тільки.
+            А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення.
+            Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.
+          </p>
+          <p>
+            Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід і
+            ви таке пропустите? Записуйтесь уже зараз!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="address">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10105.19110131213!2d25.3090533407115!3d50.71441457220087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1622586168582!5m2!1sru!2sua"
+            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section class="contacts">
+    <div class="wrapper">
+      <div class="cntact-item">
+        <img src="">
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+
   </section>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

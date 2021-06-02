@@ -1,0 +1,181 @@
+body, p, div, ul, li, a, nav, section, span, h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #666666;
+  font-size: 16px;
+  font-family: 'OpenSans'; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("./fonts/opensans-regular-webfont.eot");
+  src: url("./fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/opensans-regular-webfont.woff") format("woff"), url("./fonts/opensans-regular-webfont.ttf") format("truetype"), url("./fonts/opensans-regular-webfont.svg#Sri-TSCRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 1220px;
+  padding: 0 15px; }
+
+.line {
+  display: flex;
+  justify-content: space-between; }
+
+/* header */
+.header {
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 10px #000;
+  z-index: 1; }
+
+.menu {
+  padding-top: 20px;
+  list-style-type: none; }
+  .menu li {
+    display: inline; }
+    .menu li a {
+      height: 40px;
+      padding: 10px 20px;
+      display: inline-block;
+      text-decoration: none; }
+      .menu li a:hover {
+        border-radius: 20px 20px;
+        background: #337ab7;
+        color: #fff; }
+
+.registration {
+  padding-top: 150px;
+  padding-bottom: 30px;
+  background: #f7f7f7; }
+
+.about {
+  padding-top: 185px;
+  width: 540px;
+  text-align: center;
+  bottom: 0; }
+  .about h1 {
+    color: #333;
+    padding-bottom: 30px;
+    font-size: 25px;
+    font-weight: bold; }
+  .about p {
+    width: 510px;
+    text-wrap: normal;
+    margin: 0 auto; }
+
+.reg h3 {
+  color: #333;
+  padding-bottom: 30px;
+  font-size: 25px;
+  font-weight: bold; }
+
+.reg input {
+  margin-bottom: 5px;
+  height: 50px;
+  width: 590px;
+  padding: 0 10px;
+  display: block; }
+
+.reg .confirm {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -3px; }
+  .reg .confirm input {
+    width: 13px;
+    height: 13px;
+    margin: 0; }
+  .reg .confirm p {
+    margin-right: 5px; }
+
+.reg .btn {
+  margin: 0 auto;
+  width: 370px;
+  height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  background: #337ab7;
+  border: none;
+  border-radius: 25px 25px; }
+
+.develop {
+  padding-top: 70px;
+  padding-bottom: 120px; }
+  .develop h2 {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 25px; }
+  .develop .course {
+    width: 370px; }
+    .develop .course img {
+      display: block;
+      margin: 0 auto; }
+    .develop .course .course-title {
+      font-size: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #3498db;
+      text-align: center; }
+    .develop .course .description {
+      padding-top: 30px;
+      text-wrap: normal;
+      text-align: center; }
+
+.achievements {
+  background: #3498db;
+  padding-top: 70px;
+  padding-bottom: 70px; }
+  .achievements img {
+    display: block;
+    margin: 0 auto; }
+  .achievements span {
+    display: block;
+    color: #fff;
+    font-size: 27px;
+    text-align: center; }
+  .achievements .achieve-desc {
+    color: #fff;
+    text-align: center; }
+
+.main-sl-cont {
+  display: flex; }
+  .main-sl-cont img {
+    position: relative; }
+  .main-sl-cont .left {
+    top: 10px; }
+  .main-sl-cont .right {
+    top: 100px; }
+
+.slide .author {
+  text-align: center; }
+
+.slide .name {
+  display: block;
+  color: #333; }
+
+.response {
+  padding-top: 70px; }
+  .response .response-title {
+    font-size: 27px;
+    text-align: center; }
+  .response .response-text {
+    display: block;
+    padding: 30px 10px;
+    width: 760px;
+    text-align: center; }
+
+.slider {
+  margin: 0 auto;
+  width: 840px; }
+
+.video {
+  background: #f7f7f7;
+  padding-top: 70px; }
+
+/*# sourceMappingURL=myStyle.css.map */
