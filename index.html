@@ -24,6 +24,9 @@
 
 <body>
 
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/slick.min.js"></script>
+
   <header class="header">
     <div class="wrapper line">
       <div class="logo">
@@ -35,26 +38,29 @@
             <a href="#">Головна</a>
           </li>
           <li>
-            <a href="#">Програма курсу</a>
+            <a href="#develop">Програма курсу</a>
           </li>
           <li>
-            <a href="#">Відгуки про курс</a>
+            <a href="#feedback">Відгуки про курс</a>
           </li>
           <li>
-            <a href="#">Відео</a>
+            <a href="#video">Відео</a>
           </li>
           <li>
-            <a href="#">Ментори</a>
+            <a href="#mentors">Ментори</a>
           </li>
           <li>
-            <a href="#">Подати заявку</a>
+            <a href="#registration">Подати заявку</a>
           </li>
         </ul>
       </nav>
+      <div class="burger">
+        <span></span>
+      </div>
     </div>
   </header>
 
-  <section class="registration">
+  <section class="registration" id="registration">
     <div class="wrapper line">
       <div class="about">
         <h1>Курси програмування у Луцьку</h1>
@@ -66,9 +72,9 @@
           курсу 3 серпня</p>
       </div>
       <form action="" class="reg">
-        <h3>
+        <h2>
           Зареєструватися на курси
-        </h3>
+        </h2>
         <label for="firstName">Ім'я</label>
         <img src="img/icons/required.png" width="7px" height="7px" alt="star">
         <input type="text" id="firstName" name="name" maxlength="50" required placeholder="Ім'я">
@@ -92,18 +98,19 @@
 
         <div class="confirm">
           <input type="checkbox" id="confirm" name="confirm" required>
-          <p>Я погоджуюся із <a href="#">Політикою Конфіденційності</a></p>
+          <p>Я погоджуюся із <a href="#">Політикою Конфіденційності</a>
           <img src="img/icons/required.png" idth="7px" height="7px" alt="star">
+          </p>
         </div>
         <input type="submit"  class="btn" value="зареєструватися зараз">
       </form>
     </div>
   </section>
 
-  <section class="develop">
+  <section class="develop" id="develop" >
     <div class="wrapper">
       <h2>Курс «Розробка сайтів»</h2>
-      <div class="line">
+      <div class="line-center" id="courses">
         <div class="course">
           <img src="img/icons/course-icon-1.png" width="85" height="85" alt="WordPress">
           <h3 class="course-title">Розробка сайтів на WordPress</h3>
@@ -134,36 +141,42 @@
     </div>
   </section>
 
-  <section class="feedback">
+  <section class="feedback" id="feedback">
     <div class="achievements">
-      <div class="wrapper line">
-        <div class="achieve-item">
-          <img src="img/icons/statistic-icon-1.png" width="85" height="85" alt="static icon">
-          <p class="achieve-desc">
-            <span>25</span>
-            курсів організовано
-          </p>
+      <div class="wrapper">
+        <div class="line">
+          <div class="line">
+          <div class="achieve-item">
+            <img src="img/icons/statistic-icon-1.png" width="85" height="85" alt="static icon">
+            <p class="achieve-desc">
+              <span>25</span>
+              курсів організовано
+            </p>
+          </div>
+          <div class="achieve-item">
+            <img src="img/icons/statistic-icon-2.png" width="85" height="85" alt="static icon">
+            <p class="achieve-desc">
+              <span>836</span>
+              годин занять проведено
+            </p>
+          </div>
         </div>
-        <div class="achieve-item">
-          <img src="img/icons/statistic-icon-2.png" width="85" height="85" alt="static icon">
-          <p class="achieve-desc">
-            <span>836</span>
-            годин занять проведено
-          </p>
-        </div>
-        <div class="achieve-item">
+          <div class="line">
+          <div class="achieve-item">
           <img src="img/icons/statistic-icon-3.png" width="85" height="85" alt="static icon">
           <p class="achieve-desc">
             <span>500</span>
             студентів навчено
           </p>
         </div>
-        <div class="achieve-item">
+          <div class="achieve-item">
           <img src="img/icons/statistic-icon-4.png" width="85" height="85" alt="static icon">
           <p class="achieve-desc">
             <span>120</span>
             Випускників курсів прецевлаштовано
           </p>
+        </div>
+        </div>
         </div>
       </div>
     </div>
@@ -186,7 +199,43 @@
                 <img src="img/icons/sl-r.png" class="right" width="30px" height="27px" alt="img">
               </div>
               <p class="author">
-                <span class="name">Коля</span>
+                <span class="name">1Коля</span>
+                <i>Drupal-девелопер</i>
+              </p>
+            </div>
+          </div>
+          <div class="slide-item">
+            <div class="slide">
+              <div class="main-sl-cont">
+                <img src="img/icons/sl.png" class="left" width="30px" height="27px" alt="img">
+                <p class="response-text">
+                  Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні
+                  сайти та знайшов справу, якою хочу займатись. Після успішного завершення курсів мені
+                  надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу
+                  сказати, що Drupal та ОхІТ повністю змнили моє життя.
+                </p>
+                <img src="img/icons/sl-r.png" class="right" width="30px" height="27px" alt="img">
+              </div>
+              <p class="author">
+                <span class="name">2Коля</span>
+                <i>Drupal-девелопер</i>
+              </p>
+            </div>
+          </div>
+          <div class="slide-item">
+            <div class="slide">
+              <div class="main-sl-cont">
+                <img src="img/icons/sl.png" class="left" width="30px" height="27px" alt="img">
+                <p class="response-text">
+                  Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні
+                  сайти та знайшов справу, якою хочу займатись. Після успішного завершення курсів мені
+                  надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу
+                  сказати, що Drupal та ОхІТ повністю змнили моє життя.
+                </p>
+                <img src="img/icons/sl-r.png" class="right" width="30px" height="27px" alt="img">
+              </div>
+              <p class="author">
+                <span class="name">3Коля</span>
                 <i>Drupal-девелопер</i>
               </p>
             </div>
@@ -196,9 +245,9 @@
     </div>
   </section>
 
-  <section class="video">
+  <section class="video" id="video">
     <div class="wrapper">
-      <div>
+      <div class="video-text">
         <h2>Відео</h2>
         <p class="video-description">
           Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
@@ -211,115 +260,173 @@
           які використовували різні версії Lorem Ipsum.
         </p>
       </div>
-      <iframe width="1020" height="524" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-              clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <section class="mentors">
-    <h2>Наші ментори</h2>
-    <div class="mentors-slider">
-      <div class="mentor">
-        <img src="img/viktor.png" width="" height="" alt="Victor">
-        <div class="mentor-description">
-          <p>
-            Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься
-            досвідом управлінець із величезним досвідом! Сам засновник і СЕО компанії
-            InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах
-            проект-менеджменту
-          </p>
-          <p>
-            Віктору є про що розповісти. Він знає все про створення та керування великими
-            компаніями, ефективну комункацію, успішні проекти і багато іншого. Прицьому він
-            ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодної хвилини.
-          </p>
-          <p>
-            На книжкових полицях Віктора -сотні прочитаних книг про управління і не тільки.
-            А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення.
-            Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.
-          </p>
-          <p>
-            Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід і
-            ви таке пропустите? Записуйтесь уже зараз!
-          </p>
-        </div>
-      </div>
-      <div class="mentor">
-        <img src="img/vova.png.png" width="" height="" alt="Vova">
-        <div class="mentor-description">
-          <p>
-            Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься
-            досвідом управлінець із величезним досвідом! Сам засновник і СЕО компанії
-            InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах
-            проект-менеджменту
-          </p>
-          <p>
-            Віктору є про що розповісти. Він знає все про створення та керування великими
-            компаніями, ефективну комункацію, успішні проекти і багато іншого. Прицьому він
-            ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодної хвилини.
-          </p>
-          <p>
-            На книжкових полицях Віктора -сотні прочитаних книг про управління і не тільки.
-            А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення.
-            Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.
-          </p>
-          <p>
-            Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід і
-            ви таке пропустите? Записуйтесь уже зараз!
-          </p>
-        </div>
-      </div>
-      <div class="mentor">
-        <img src="img/mark.png" width="" height="" alt="Mark">
-        <div class="mentor-description">
-          <p>
-            Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься
-            досвідом управлінець із величезним досвідом! Сам засновник і СЕО компанії
-            InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах
-            проект-менеджменту
-          </p>
-          <p>
-            Віктору є про що розповісти. Він знає все про створення та керування великими
-            компаніями, ефективну комункацію, успішні проекти і багато іншого. Прицьому він
-            ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодної хвилини.
-          </p>
-          <p>
-            На книжкових полицях Віктора -сотні прочитаних книг про управління і не тільки.
-            А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення.
-            Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.
-          </p>
-          <p>
-            Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід і
-            ви таке пропустите? Записуйтесь уже зараз!
-          </p>
-        </div>
+      <div class="media-content">
+          <iframe width="1020" height="546" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen>
+          </iframe>
       </div>
     </div>
   </section>
 
-  <section class="address">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10105.19110131213!2d25.3090533407115!3d50.71441457220087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1622586168582!5m2!1sru!2sua"
-            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </section>
-
-  <section class="contacts">
+  <section class="mentors" id="mentors">
     <div class="wrapper">
-      <div class="cntact-item">
-        <img src="">
+      <h2>Наші ментори</h2>
+      <div class="slider">
+        <div class="slide-item">
+          <div class="mentor">
+            <img src="img/viktor.png" width="337px" height="337px" alt="Victor">
+            <div class="mentor-description">
+              <h3>Віктор</h3>
+              <p>
+                Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься
+                досвідом управлінець із величезним досвідом! Сам засновник і СЕО компанії
+                InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах
+                проект-менеджменту
+              </p>
+              <p>
+                Віктору є про що розповісти. Він знає все про створення та керування великими
+                компаніями, ефективну комункацію, успішні проекти і багато іншого. Прицьому він
+                ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодної хвилини.
+              </p>
+              <p>
+                На книжкових полицях Віктора -сотні прочитаних книг про управління і не тільки.
+                А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення.
+                Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.
+              </p>
+              <p>
+                Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід і
+                ви таке пропустите? Записуйтесь уже зараз!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="mentor">
+            <img src="img/vova.png" width="337px" height="337px" alt="Vova">
+            <div class="mentor-description">
+              <h3>Володимир</h3>
+              <p>
+                Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься
+                досвідом управлінець із величезним досвідом! Сам засновник і СЕО компанії
+                InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах
+                проект-менеджменту
+              </p>
+              <p>
+                Віктору є про що розповісти. Він знає все про створення та керування великими
+                компаніями, ефективну комункацію, успішні проекти і багато іншого. Прицьому він
+                ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодної хвилини.
+              </p>
+              <p>
+                На книжкових полицях Віктора -сотні прочитаних книг про управління і не тільки.
+                А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення.
+                Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.
+              </p>
+              <p>
+                Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід і
+                ви таке пропустите? Записуйтесь уже зараз!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="mentor">
+            <img src="img/mark.png" width="337px" height="337px" alt="Mark">
+            <div class="mentor-description">
+              <h3>Марк</h3>
+              <p>
+                Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься
+                досвідом управлінець із величезним досвідом! Сам засновник і СЕО компанії
+                InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах
+                проект-менеджменту
+              </p>
+              <p>
+                Віктору є про що розповісти. Він знає все про створення та керування великими
+                компаніями, ефективну комункацію, успішні проекти і багато іншого. Прицьому він
+                ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодної хвилини.
+              </p>
+              <p>
+                На книжкових полицях Віктора -сотні прочитаних книг про управління і не тільки.
+                А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення.
+                Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.
+              </p>
+              <p>
+                Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід і
+                ви таке пропустите? Записуйтесь уже зараз!
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+    </section>
 
-  <section class="footer">
+    <section class="address">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.297758764603!2d25.315619415740937!3d50.71441487951263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4725997e35f529e9%3A0xeba249b67a64b0a9!2sInternetDevels!5e0!3m2!1sru!2sua!4v1623047485423!5m2!1sru!2sua" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="wrapper line">
+        <div class="line">
+        <div class="contact-item">
+          <div class="icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <p class="contact-desc">
+            <span>Телефон</span>
+            +38 067 332 17 55
+          </p>
+        </div>
+        <div class="contact-item">
+          <div class="icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <p class="contact-desc">
+            <span>E-mail</span>
+            <a href="#">office@it.volyn.ua</a>
+          </p>
+        </div>
+        </div>
+        <div class="line">
+        <div class="contact-item">
+          <div class="icon">
+            <i class="fas fa-map-marker-alt marker"></i>
+          </div>
+          <p class="contact-desc">
+            <span>Адресна</span>
+            вул. Боженка 34г, Луцьк
+          </p>
+        </div>
+        <div class="contact-item">
+          <div class="icon">
+            <i class="fab fa-facebook-f marker"></i>
+          </div>
+          <p class="contact-desc">
+            <span>Facebook</span>
+            <a href="#">facebook.com/oxitschool</a>
+          </p>
+        </div>
+        </div>
+      </div>
+    </section>
 
-  </section>
+    <section class="footer">
+      <div class="wrapper">
+        <p>
+          © Copyright 2018-2020 Internet Devels
+          <a href="#">Умови політики конфіденційності</a>
+        </p>
+      </div>
+    </section>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/cb166c8b56.js" crossorigin="anonymous"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
